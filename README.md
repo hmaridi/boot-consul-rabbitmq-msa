@@ -21,3 +21,7 @@ Below are the screens of the application.
 Clicking on the tab's one, two or three the data that you see on the screen is based on the data fetched by the respective service by calling its database.
 
 <img width="1074" alt="02  One" src="https://user-images.githubusercontent.com/42566418/63941363-1b5e3580-ca89-11e9-961a-5c7011a8d7e9.png">
+
+Notice that the UUID generated for service-one which lies in service-one-db is in sync with service-two and service-three tabs which is achieved by RabbitMQ (asychronous communication between microservices).
+
+<img width="1074" alt="03  Two" src="https://user-images.githubusercontent.com/42566418/63941466-58c2c300-ca89-11e9-8ed9-e77bfa675d66.png">
