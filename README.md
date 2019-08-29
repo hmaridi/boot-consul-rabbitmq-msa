@@ -25,3 +25,10 @@ Clicking on the tab's one, two or three the data that you see on the screen is b
 Notice that the UUID generated for service-one which lies in service-one-db is in sync with service-two and service-three tabs which is achieved by RabbitMQ (asychronous communication between microservices).
 
 <img width="1074" alt="03  Two" src="https://user-images.githubusercontent.com/42566418/63941466-58c2c300-ca89-11e9-8ed9-e77bfa675d66.png">
+
+
+<img width="1074" alt="04  Three" src="https://user-images.githubusercontent.com/42566418/63941581-90ca0600-ca89-11e9-8ac0-1dbd5058e49e.png">
+
+Service Registration
+
+During the initialization of a service, it would get registered to the discovery and registration server (which in our example is Hashicorp's Consul).
