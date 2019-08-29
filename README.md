@@ -32,3 +32,5 @@ Notice that the UUID generated for service-one which lies in service-one-db is i
 Service Registration
 
 During the initialization of a service, it would get registered to the discovery and registration server (which in our example is Hashicorp's Consul).
+
+![microservices-sample (service registration sequence)](https://user-images.githubusercontent.com/42566418/63941718-cc64d000-ca89-11e9-91b1-26a5376e83f9.png)
