@@ -45,4 +45,27 @@ Architecture
 
 Below is the architectural diagram for microservices sample project.
 
+![Architecture](https://user-images.githubusercontent.com/42566418/63941926-3ed5b000-ca8a-11e9-9c0e-bd244a25bc51.jpg)
+
+Technology
+Microservices sample project uses a number of open source projects to work properly:
+
+SpringBoot - Application framework
+Zuul - API Gateway (Load Balancer)
+Consul - Service registration and Discovery
+Docker - Containerization platform
+RabbitMQ - asynchronous microservices messaging.
+Logstash - Log collector
+Elasticsearch - Log indexer
+Kibana - Data visualization
+Angular - HTML enhanced for web apps!
+Bootstrap - great UI boilerplate for modern web apps
+jQuery - HTML document traversal and manipulation
+Swagger - API documentation
+Tools
+Java - Programming
+Maven - Build
+Git - Version control
+Docker - Deployment
+
 
