@@ -1,0 +1,46 @@
+server:
+  port: 8082
+  
+spring:
+  application:
+    name: service-one
+    
+  datasource:
+    testWhileIdle: true
+    validationQuery: SELECT 1
+  jackson.serializationindent_output: true
+  jpa:
+    hibernate:
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties.hibernate.dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    
+management:
+  context-path: /devoxx
+  health:
+    consul:
+      enabled: false
+  security:
+    enabled: false
+    
+  rabbitmq:
+    host: localhost
+    port: 15672
+    username: guest
+    password: guest
+    virtualHost: /
+    
+---    
+spring:
+  profiles: default
+  h2.console:
+    enabled: true
+    path: /h2
+  datasource:
+    url: jdbc:h2:mem:service-one-db
+    username: sa
+    password: null
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update

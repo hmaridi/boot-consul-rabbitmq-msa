@@ -1,0 +1,27 @@
+server:
+  port: 8080
+  
+spring:
+  application:
+    name: api-gateway
+    
+management:
+  context-path: /devoxx
+#  health:
+#    consul:
+#      enabled: false
+#  security:
+#    enabled: false
+    
+zuul:
+  ignoredServices: '*'
+  routes:
+    one:
+      path: /service-one/**
+      serviceId: service-one
+    two:
+      path: /service-two/**
+      serviceId: service-two
+    three:
+      path: /service-three/**
+      serviceId: service-three
